@@ -39,6 +39,6 @@ export class TodoPage {
     }
   }
   
-  // Create an instance of the page object
-  const todoPage = new TodoPage();
-  export default todoPage;
+// Create an instance of the page object
+const todoPage = new TodoPage();
+export default todoPage;

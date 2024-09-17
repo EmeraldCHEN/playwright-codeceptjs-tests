@@ -1,3 +1,4 @@
+import base from '../pages/base';
 import todoPage from '../pages/todo';
 
 Feature('Test TodoMVC React App');
@@ -5,7 +6,7 @@ Feature('Test TodoMVC React App');
 let todoItems: string[] = ['Buy groceries', 'Walk the dog', 'Clean the house'];
 
 Before(({ I }) => {
-    I.amOnPage('/'); // Navigate to the page before each scenario
+    base.amOnPage(I, '/'); // Navigate to the page before each scenario
 });
 
 Scenario('Add a new todo',  ({ I }) => {
@@ -31,7 +32,7 @@ Scenario('Clear completed todos', ({ I }) => {
     todoPage.doNotSeeTodoItem(I, todoItems[1]);
 });
 
-Scenario('Filter todos by All, Active', ({ I }) => {
+Scenario('Filter todos by All / Active', ({ I }) => {
     todoItems.forEach(item => {
         todoPage.addTodoItem(I, item);
     });
