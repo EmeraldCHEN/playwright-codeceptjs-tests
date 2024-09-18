@@ -17,3 +17,5 @@ npx codeceptjs run --steps
 -- Organize Locators: Store locators in separate files or use Page Objects to manage them effectively.
 
 -- Maintainable Tests: Write tests that are easy to read and maintain by using descriptive methods and organizing your code logically
+
+-- [Page Object Model (POM)](https://emerald-software-testing.blogspot.com/2024/08/page-object-model-pom-in-test.html) in test automation
